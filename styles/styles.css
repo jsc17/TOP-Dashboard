@@ -1,0 +1,15 @@
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 6fr;
+}
+
+.side-bar {
+  background-color: #1992d4;
+  grid-row: 1 / 7;
+}
+
+.content {
+  background-color: lightgray;
+}
