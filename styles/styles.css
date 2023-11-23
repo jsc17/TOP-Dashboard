@@ -5,8 +5,8 @@
 body {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: 17vw 1fr;
+  grid-template-rows: 15vh 1fr;
 }
 
 .side-bar {
@@ -53,7 +53,7 @@ body {
 
 .side-bar a {
   text-decoration: none;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 .side-bar a:link,
@@ -70,6 +70,49 @@ body {
 
 .main-content {
   background-color: lightgray;
+  display: grid;
+  grid-template-columns: 6fr 2fr;
+  grid-template-rows: 5% 95%;
+  padding: 32px;
+  column-gap: 32px;
+  row-gap: 16px;
+}
+
+.main-content h1 {
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 35px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 5px 10px 10px darkgrey;
+  max-width: 330px;
+  max-height: 220px;
+  min-width: 200px;
+  min-height: 200px;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: 5fr 1fr 4fr;
+}
+
+.announcement-card {
+  background-color: white;
+  border-radius: 5%;
+  box-shadow: 5px 10px 10px darkgrey;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .filter-white {
