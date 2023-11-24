@@ -12,7 +12,7 @@ Project to create a mock admin dashboard from the Odin Projects Intermediate HTM
 
 ## Project goals
 Practice the following CSS features
-- CSS Grid Layout
-- CSS custom properties
+- Using Grid to layout site
+- Custom properties
 - Theme selection
 - SVG embedding and coloring using filters
