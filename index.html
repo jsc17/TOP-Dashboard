@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TOP Dashboard</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/scripts.js"></script>
@@ -30,9 +30,26 @@
             <li><img src="images/shield-check.svg" alt="Privacy icon" class="filter"><a href="#">Privacy</a></li>
         </ul>
     </div>
-    <div class="header"></div>
+    <div class="header">
+        <div class="search-bar">
+            <img src="images/magnify.svg" alt="Search Icon">
+            <input type="search">
+        </div>
+        <div class="profile-bar">
+            <img src="images/account-circle.svg" alt="Profile Picture">
+            <h1>Hi, John Smith</h1>
+            <img src="images/bell-badge.svg" alt="Notification Icon">
+            <button id="theme-button"><img src="images/theme-light-dark.svg" alt="Theme Selector Icon"></button>
+            <a href="https://github.com/jsc17/TOP-Dashboard"><img src="images/github-mark.svg" alt="Github Logo"
+                    id="github-mark"></a>
+        </div>
+
+    </div>
     <div class="main-content">
-        <h1>Your projects</h1>
+        <div class="project-header">
+            <h1>Your projects</h1>
+            <div class="project-buttons"><button>New</button><button>Upload</button><button>Share</button></div>
+        </div>
         <h1>Announcements</h1>
         <div class="project-container">
             <div class="project-card">
