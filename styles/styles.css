@@ -1,11 +1,27 @@
 :root {
-  --side-bar-bg-color: #0f172a;
-  --side-bar-text-color: #cbd5e1;
-  --content-bg-color: #94a3b8;
-  --card-bg-color: #cbd5e1;
-  --card-text-color: black;
-  --card-shadow-color: #1e293b;
   font-size: 16px;
+}
+
+:root.light {
+  --side-bar-bg-color: #0369a1;
+  --side-bar-text-color: #f0f9ff;
+  --content-bg-color: #bae6fd;
+  --card-bg-color: #f0f9ff;
+  --card-text-color: black;
+  --card-shadow-color: #082f49;
+  --button-bg-color: #0369a1;
+  --button-text-color: #f0f9ff;
+}
+
+:root.dark {
+  --side-bar-bg-color: #020617;
+  --side-bar-text-color: #94a3b8;
+  --content-bg-color: #334155;
+  --card-bg-color: #0f172a;
+  --card-text-color: #94a3b8;
+  --card-shadow-color: #64748b;
+  --button-bg-color: #020617;
+  --button-text-color: #94a3b8;
 }
 
 body {
@@ -127,6 +143,7 @@ body {
   align-items: center;
   font-size: 1.25rem;
   font-weight: bold;
+  color: var(--card-text-color);
 }
 
 .project-header {
@@ -142,10 +159,10 @@ body {
 
 .project-buttons button {
   padding: 10px 20px;
-  background-color: #0f172a;
+  background-color: var(--button-bg-color);
   border: none;
   border-radius: 16px;
-  color: var(--side-bar-text-color);
+  color: var(--button-text-color);
 }
 
 .project-container {
