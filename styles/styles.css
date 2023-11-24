@@ -100,7 +100,7 @@ body {
 .profile-bar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 24px;
   height: 5rem;
   color: var(--profile-text-color);
 }
@@ -119,6 +119,10 @@ body {
   display: flex;
   align-items: center;
   height: 100%;
+}
+
+.profile-bar h1 {
+  font-size: 1.25rem;
 }
 
 .header input {
@@ -150,6 +154,10 @@ body {
   align-items: center;
   font-size: 1.25rem;
   font-weight: bold;
+  color: var(--card-text-color);
+}
+
+.main-content p {
   color: var(--card-text-color);
 }
 
@@ -187,12 +195,34 @@ body {
 }
 
 .project-card {
+  display: grid;
+  grid-template-rows: 80% 20%;
   min-width: 200px;
-  min-height: 200px;
+  height: 225px;
   border-left: 5px solid var(--card-border-color);
 }
 
-.announcements {
+.project-card-text {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.project-card-buttons {
+  display: flex;
+  justify-content: end;
+  padding: 10px;
+  gap: 18px;
+}
+
+.project-card-buttons img {
+  height: 100%;
+}
+
+.announcement-container {
   display: grid;
   grid-template-rows: 5fr 1fr 4fr;
 }
@@ -200,6 +230,37 @@ body {
 .announcement-card {
   min-width: 200px;
   max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 16px;
+}
+
+.announcement {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.announcement:not(:last-child) {
+  border-bottom: 2px solid var(--card-border-color);
+}
+
+.announcement h2 {
+  color: var(--card-text-color);
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.announcement a {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 8px;
+}
+
+.announcement a:link,
+.announcement a:visited {
+  color: var(--card-text-color);
 }
 
 .filter-sidebar {
@@ -215,4 +276,19 @@ body {
 .filter-dark {
   filter: invert(60%) sepia(84%) saturate(3854%) hue-rotate(7deg)
     brightness(93%) contrast(95%);
+}
+
+.filter-red {
+  filter: invert(29%) sepia(34%) saturate(6444%) hue-rotate(347deg)
+    brightness(88%) contrast(95%);
+}
+
+.filter-gold {
+  filter: invert(76%) sepia(38%) saturate(4988%) hue-rotate(357deg)
+    brightness(99%) contrast(94%);
+}
+
+.filter-green {
+  filter: invert(78%) sepia(27%) saturate(6386%) hue-rotate(40deg)
+    brightness(106%) contrast(83%);
 }
