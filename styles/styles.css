@@ -17,13 +17,13 @@
 
 :root.dark {
   --side-bar-bg-color: #020617;
-  --side-bar-text-color: #94a3b8;
+  --side-bar-text-color: #cbd5e1;
   --content-bg-color: #334155;
   --card-bg-color: #0f172a;
-  --card-text-color: #94a3b8;
+  --card-text-color: #cbd5e1;
   --card-shadow-color: #64748b;
   --button-bg-color: #020617;
-  --button-text-color: #94a3b8;
+  --button-text-color: #cbd5e1;
   --card-border-color: #d97706;
   --profile-text-color: #d97706;
 }
